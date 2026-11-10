@@ -26,10 +26,12 @@ jobs:
         with:
           flutter-version: '3.22.2'
           channel: 'stable'
-          cache: true
+          cache: false # ক্যাশ বন্ধ রাখা হলো যাতে কোনো পুরোনো ব্রাইটনেস প্লাগিন ধরে না রাখে
 
-      - name: Install Dependencies
-        run: flutter pub get
+      - name: Clean Project & Install Dependencies
+        run: |
+          flutter clean
+          flutter pub get
 
       - name: Generate Android Directory
         run: flutter create . --platforms=android --project-name=mplayer
