@@ -24,7 +24,7 @@ jobs:
       - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable' # এখানে 3.19.x এর বদলে stable করে দেওয়া হলো
+          flutter-version: '3.22.2'
           channel: 'stable'
           cache: true
 
