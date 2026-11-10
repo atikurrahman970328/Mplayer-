@@ -1,4 +1,4 @@
-name: offline_mx_player
+name: mplayer
 description: "A complete 100% Offline Video & Audio Player Suite inspired by MX Player."
 publish_to: 'none'
 
