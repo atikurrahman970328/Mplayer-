@@ -1,4 +1,4 @@
-Name: Build Android APK
+name: Build Android APK
 
 on:
   push:
@@ -31,7 +31,6 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
-      # নামের কনফ্লিক্ট এড়াতে সঠিক প্রজেক্ট নামসহ অ্যান্ড্রয়েড ফোল্ডার জেনারেট করার কমান্ড
       - name: Generate Android Directory
         run: flutter create . --platforms=android --project-name=mplayer
 
