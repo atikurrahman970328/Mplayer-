@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # ১. LibMPV ও FFmpeg ভিত্তিক কোর মিডিয়া ইঞ্জিন (HW, HW+, SW ডিকোডার)
+  # ১. LibMPV ও FFmpeg ভিত্তিক কোর মিডিয়া ইঞ্জিন
   media_kit: ^1.1.10
   media_kit_video: ^1.2.4
   media_kit_libs_android_video: ^1.2.4
@@ -24,9 +24,9 @@ dependencies:
   # ৩. স্টেট ম্যানেজমেন্ট
   flutter_riverpod: ^2.5.1
 
-  # ৪. পারমিশন ও ডিভাইস হার্ডওয়্যার
-  permission_handler: ^11.3.0
-  device_info_plus: ^10.1.0
+  # ৪. পারমিশন ও ডিভাইস হার্ডওয়্যার (ভার্সন কনফ্লিক্ট এড়াতে সামঞ্জস্যপূর্ণ করা)
+  permission_handler: ^11.3.1
+  device_info_plus: 8.0.2
 
   # ৫. প্রাইভেট ভল্ট সিকিউরিটি (বায়োমেট্রিক ও AES-256 এনক্রিপশন)
   local_auth: ^2.2.0

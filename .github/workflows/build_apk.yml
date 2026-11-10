@@ -31,6 +31,10 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
+      # অ্যান্ড্রয়েড ফোল্ডার না থাকলে গিটহাব নিজেই সেটি জেনারেট করে নেবে
+      - name: Generate Android Directory
+        run: flutter create . --platforms=android
+
       - name: Build APK (Release)
         run: flutter build apk --release
 
