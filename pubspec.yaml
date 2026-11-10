@@ -1,0 +1,46 @@
+name: offline_mx_player
+description: "A complete 100% Offline Video & Audio Player Suite inspired by MX Player."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ১. LibMPV ও FFmpeg ভিত্তিক কোর মিডিয়া ইঞ্জিন (HW, HW+, SW ডিকোডার)
+  media_kit: ^1.1.10
+  media_kit_video: ^1.2.4
+  media_kit_libs_android_video: ^1.2.4
+
+  # ২. লোকাল অফলাইন SQLite ডাটাবেজ
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+
+  # ৩. স্টেট ম্যানেজমেন্ট
+  flutter_riverpod: ^2.5.1
+
+  # ৪. পারমিশন ও ডিভাইস হার্ডওয়্যার
+  permission_handler: ^11.3.0
+  device_info_plus: ^10.1.0
+
+  # ৫. প্রাইভেট ভল্ট সিকিউরিটি (বায়োমেট্রিক ও AES-256 এনক্রিপশন)
+  local_auth: ^2.2.0
+  encrypt: ^5.0.3
+  flutter_secure_storage: ^9.0.0
+
+  # ৬. পিকচার-ইন-পিকচার (PiP) ও ইউটিলিটি
+  floating: ^3.0.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
